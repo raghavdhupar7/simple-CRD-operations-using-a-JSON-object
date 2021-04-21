@@ -24,7 +24,9 @@ def create(key, value, timeout = 0): #create function with key, value, and timeo
                 hash[key] = l 
         print("successfully added the Key-value pair")   #if the key-value pair is successfully added
     else:
+        print("\n")
         print("Error!!!!!! " + "This Key Already Exists") #Error, if the key-value pair is not successfully added
+        time.sleep(2)                                     #sleeping because giving some time to the user to read the output clearly
 
 def read(key):   #read function with key is given as a parameter 
     if key in hash:        #checking if that key is already present or not
@@ -97,6 +99,7 @@ if __name__ == "__main__":    #Main function in which the input is taken.
         elif t == '2':          #Reading a Key-value pair
             print("Enter Key you are looking for\n")
             s = input()        #taking an input in form of string and storing it in a variable name 's'
+            s = s.rstrip()
             print("\n")
             print("\n")
             ans = read(s)       #executing read function and passing key as a parameter.
@@ -109,6 +112,7 @@ if __name__ == "__main__":    #Main function in which the input is taken.
         elif t == '3':          #Deleting a Key-value pair
             print("Enter Key you want to delete\n")
             s = input()         #taking an input in form of string and storing it in a variable name 's'
+            s = s.rstrip()
             delete(s)            #executing delete function and passing key as a parameter.
             time.sleep(2)         #making the program to sleep for 2 seconds as it get messier because of the excessive use of the print statements 
 
