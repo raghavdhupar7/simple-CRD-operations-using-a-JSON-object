@@ -4,15 +4,15 @@ I've Tried creating a Simple Create, Read and Delete program for Key-value pair 
 It was a simple, learing, yet a fun Assignment which made me learn new things such as how to use time(), sleep() and JSON modules of sys and Json library resp.
 
 # what does sleep module do?
-sleep(): The sleep() function suspends (waits) execution of the current thread for a given number of seconds.
+The sleep() function suspends (waits) execution of the current thread for a given number of seconds.
 
 # what does time module do?
-time(): The sleep() function suspends (waits) execution of the current thread for a given number of seconds.
+The sleep() function suspends (waits) execution of the current thread for a given number of seconds.
 
 # What does JSON modules do?
 We can Use it to directly convert our string type key-pairs to dictionary and can perform operations like READ, CREATE and DELETE very easily.
 
-# The data store willsupport the following functional requirements.
+# The data store will support the following functional requirements.
 1. It can be initialized using an optional file path. If one is not provided, it will reliably create itself in a reasonable location on the laptop.
 2. A new key-value pair can be added to the data store using the Create operation. The key isalways a string - capped at 32 chars. The value is always a JSON object - capped at 16KB.
 3. If Create is invoked for an existing key, an appropriate error must be returned.
