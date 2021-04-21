@@ -9,7 +9,7 @@ The sleep() function suspends (waits) execution of the current thread for a give
 # what does time module do?
 The sleep() function suspends (waits) execution of the current thread for a given number of seconds.
 
-# What does JSON modules do?
+# What does JSON module do?
 We can Use it to directly convert our string type key-pairs to dictionary and can perform operations like READ, CREATE and DELETE very easily.
 
 # The data store will support the following functional requirements.
